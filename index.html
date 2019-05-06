@@ -3,6 +3,7 @@
 <head>
 	<title>2무드보드2</title>
 	<style>
+		body{background-image: linear-gradient(pink, #A506B2);height: 2100px;}
 		.wrap{width: 1000px; margin: auto;}
 		img{width: 1000px;}
 		.flo{ position: relative; }
@@ -36,51 +37,65 @@
 		.yel{width: 200px; left:300px; top: 750px; position: absolute;}
 		.dhl{position: absolute; top: 850px; left: 150px;}
 		.et{position: absolute; left: 300px;}
-.gun{position: absolute; top: 1150px; left: -400px;}
-.benom{position: absolute; left: 1000px; top: 800px; }
-	.pix{position: absolute; top: 10px; left: 900px;}
-	.pink{position: absolute;  top: 400px; left: 750px;}
+		.gun{position: absolute; top: 1150px; left: -400px;}
+		.benom{position: absolute; left: 1000px; top: 800px; }
+		.pix{position: absolute; top: 10px; left: 900px; z-index: 999; animation: pi 30s infinite alternate ease; }
+		@keyframes pi{
+			from{}
+			to{transform: rotate(-360deg); }
+		}
+		.pink{position: absolute;  top: 450px; left: 750px;}
+		.w{position: absolute; width: 80%; top: 300px;}
+		.r{position: absolute; width: 400px; top: 730px; left: 900px; opacity: 0.9;}
+		.dhl{z-index: 999; animation: tree 30s infinite alternate ease; }
+		@keyframes tree{
+			from{top: 1px;}
+			to{top: 850}
 
 	</style>
 
 </head>
 <body>
 <div class="wrap">
-
-<section class="pink">
-<img src="./n.png">
-</section>
+	<section class="w">
+		<img src="./w.png" style="opacity: 0.8;">
+	</section>
+	<img src="./r.png" class="r">
+	<section class="pink">
+		<img src="./n.png">
+	</section>
 	<section class="pix">
-	<img src="./k.png" style="width: 800px;">
-</section>
-<section class="benom">
+		<img src="./k.png" style="width: 800px;">
+	</section>
+	<section class="benom">
 		<img src="./m.png" style="width: 600px;">
 	</section>
 	<section class="a">
-	<img src="./i.png" class="et">
-</section>
+		<img src="./i.png" class="et">
+	</section>
 
 	<section>
-	<img src="./p.png" class="rjs">
-	<img src="./e.png" class="vf">
-</section>
-<section>
-	<img src="./h.png" class="dhl">
-</section>
+		<img src="./p.png" class="rjs">
+		<img src="./e.png" class="vf">
+	</section>
+	<section>
+		<img src="./h.png" class="dhl">
+	</section>
+
 	<div class="flo">
 		<section class="sun-f">
 			<img src="./c.png" style="position: absolute; width: 1000px;top: 1000px; ">
 		</section>
 		
 		<img src="./g.png" class="gr">
-<img src="./d.png" class="gf" style="width: 300px; position: absolute; top: 650px; left: 300px;">
-<img src="./f.png" class="yel">
+		<img src="./d.png" class="gf" style="width: 300px; position: absolute; top: 650px; left: 300px;">
+		<img src="./f.png" class="yel">
 		<section class="y-flower">
 			<img src="./b.png" style=" position: absolute; width: 1000px; top: 1000px;"   >
 		</section>
 		<section  class="gun">
-		<img src="./j.png">
-	</section>
+			<img src="./j.png">
+		</section>
 		<section class="end">
 			<img src="./a.png" style="height: 600px; width: 1200px; position: absolute;top: 1000px; ">
 		</section>
